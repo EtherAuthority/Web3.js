@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>EtherAuthority Js Library to add tokens in metamask</title>
+  <meta name="description" content="EtherAuthority Js Library to add tokens in metamask">
+  <meta name="author" content="EtherAuthority">
+
+  <meta property="og:title" content="EtherAuthority Js Library to add tokens in metamask">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://etherauthority.io/">
+  <meta property="og:description" content="EtherAuthority Js Library to add tokens in metamask">
+  <meta property="og:image" content="https://etherauthority.io/wp-content/uploads/2021/05/EtherAuthorityLogoDarkBlue.svg">
+
+  <link rel="icon" href="https://etherauthority.io/wp-content/uploads/2021/05/favicon.png">
+  <link rel="icon" href="https://etherauthority.io/wp-content/uploads/2021/05/favicon.png" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="https://etherauthority.io/wp-content/uploads/2021/05/favicon.png">
+  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+
+</head>
+
+<body>
+    <button id="addToken"  onclick="_addToken()">Add Token</button>
+  <!-- your content here... -->
+  <script src="token_library.js"></script>
+  <script type="text/javascript">
+  
+  function _addToken(){
+    //test token
+    const tokenAddress = '0xc1A016C2c1aCa2F381dD14d3F0a5cDbe4c986F45';
+    const tokenSymbol = 'ETH';
+    const tokenDecimals = 18;
+    const tokenImage = 'https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png';
+    addToken(tokenAddress,tokenSymbol,tokenDecimals,tokenImage);
+  }  
+
+</script>
+</body>
+</html>
