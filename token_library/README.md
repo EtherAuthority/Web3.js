@@ -9,6 +9,8 @@ tokenAddress,tokenSymbol,tokenDecimals and tokenImage in your code then call _ad
 # Example
 1) First include js library
      ```<script src="token_library.js"></script>```
+     or use cdn library
+     ``` <script src="https://cdn.jsdelivr.net/gh/EtherAuthority/Web3.js/token_library/token_library.js"></script> ```
 2) Use function
   ```function _addToken(){
 
